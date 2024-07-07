@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <main class="main-container">
+      <section id="home-section" class="home-section">
+        <div class="top-section">
+          <p class="date" id="date"></p>
+          <p class="part-of-day-container">
+            <span class="material-symbols-outlined" id="part-of-day-icon">sunny</span>
+            <span class="part-of-day" id="part-of-day"></span>
+          </p>
+        </div>
+        <div class="card-container">
+          <h1 class="title">Weather App</h1>
+          <p class="subtitle">Get the latest weather information</p>
+          <form id="location-form" class="location-form">
+            <div class="input-container">
+              <input name="location" type="text" id="location-input" placeholder="Enter your location" autocomplete="off" spellcheck="false" />
+              <button type="submit">Go</button>
+            </div>
+            <p id="error-helper"></p>
+          </form>
+          <div class="divider"></div>
+          <div class="header">
+            <div class="weather-details">
+              <img class="weather-icon" id="weather-icon" alt="weather icon" />
+            </div>
+            <div class="location-info">
+              <p class="location-title" id="location-title"></p>
+              <p class="weather-description" id="weather-description"></p>
+            </div>
+          </div>
+          <div class="weather-info">
+            <div class="main-info-container" id="main-info-container">
+              <div class="main-info">
+                <p class="temperature" id="temperature"></p>
+              </div>
+              <p class="temperature-label"> Celsius </p>
+              <p class="min-max"> low: <span id="temp-min"></span>° / high: <span id="temp-max"></span>° </p>
+            </div>
+            <div class="sub-info-container" id="sub-info-container"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
