@@ -25,7 +25,6 @@ body {
   padding: 0;
   margin: 0;
   color: var(--primary-text-color);
-  animation: gradient 1s ease infinite;
 }
 
 /* Positions the content on top of the background */
@@ -407,16 +406,4 @@ body {
     to bottom,
     #2C3E50,#FD746C
   );
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
